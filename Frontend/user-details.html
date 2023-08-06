@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoinTab | User Details</title>
+  <link rel="stylesheet" href="./style/user-details.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="./index.html" class="nav-link">Home</a>
+    <a href="./user-details.html" class="nav-link">User</a>
+</nav>
+
+  <div class="container">
+    <h1>Welcome to Cointab User Dashboard</h1>
+    <div class="filter-section">
+      <label for="genderFilter">Filter by Gender:</label>
+      <select id="genderFilter" class="filter-select">
+        <option value="all">All</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button id="applyFilterBtn" class="button">Apply Filter</button>
+    </div>
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+          <th>Username</th>
+          <th>Age</th>
+          <th>Date of Birth</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+        <!-- User data will be dynamically added here -->
+      </tbody>
+    </table>
+    <div class="pagination">
+      <button id="prevPageBtn" class="button">Previous</button>
+      <span id="currentPage"></span>
+      <button id="nextPageBtn" class="button">Next</button>
+    </div>
+   
+  </div>
+
+  <script src="./script/user-details.js"></script>
+</body>
+
+</html>
