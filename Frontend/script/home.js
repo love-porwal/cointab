@@ -1,5 +1,5 @@
 // Function to fetch users and store in the database
-let localhost = "http://localhost:8080";
+let url = "https://nervous-erin-foal.cyclic.app";
 // Get references to the DOM elements
 const fetchUsersBtn = document.getElementById("fetch-users");
 const deleteUsersBtn = document.getElementById("delete-users");
@@ -18,7 +18,7 @@ async function fetchUsers() {
     fetchUsersBtn.disabled = true;
 
     // Make the API call to fetch users from the backend
-    const response = await fetch(`${localhost}/fetch-get-users`);
+    const response = await fetch(`${url}/fetch-get-users`);
     const data = await response.json();
 
     // Display success message or error alert based on the response
@@ -46,7 +46,7 @@ async function deleteUsers() {
     deleteUsersBtn.disabled = true;
 
     // Make the API call to delete all users from the backend
-    const response = await fetch(`${localhost}/delete-table-data`, {
+    const response = await fetch(`${url}/delete-table-data`, {
       method: "DELETE",
     });
 

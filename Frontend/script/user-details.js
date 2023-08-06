@@ -1,5 +1,5 @@
 //   -------------------------------------------------------
-let localhost = "http://localhost:8080";
+let url = "https://nervous-erin-foal.cyclic.app";
 
 
 const currentPage = document.getElementById("currentPage");
@@ -31,7 +31,7 @@ function createUserRow(user) {
   
   // Function to fetch and display initial user data
   function fetchAndDisplayUsers() {
-    fetch(`${localhost}/users-pagination`)
+    fetch(`${url}/users-pagination`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network error");
@@ -57,7 +57,7 @@ async function fetchData() {
     const gender = genderFilter.value;
     
 if(gender=="all"){
-    fetch(`${localhost}/all-users`)
+    fetch(`${url}/all-users`)
     .then((response) => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -78,7 +78,7 @@ if(gender=="all"){
         console.error('Error:', error.message);
     });
 }else{
-    fetch(`${localhost}/users/filter?gender=${gender}`)
+    fetch(`${url}/users/filter?gender=${gender}`)
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -118,7 +118,7 @@ prevPageBtn.addEventListener('click', () => {
     if (page > 1) {
         page--;
         let pageN = page
-        fetch(`${localhost}/users-pagination?page=${pageN}`)
+        fetch(`${url}/users-pagination?page=${pageN}`)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -147,7 +147,7 @@ nextPageBtn.addEventListener('click', () => {
     
         page++;
         let pageN = page;
-    fetch(`${localhost}/users-pagination?page=${pageN}`)
+    fetch(`${url}/users-pagination?page=${pageN}`)
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
