@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Project Demo](#project-demo)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
 - [API Endpoints](#api-endpoints)
@@ -12,6 +13,7 @@ This project is a company assignment given by the company called Cointab. The ob
 It is built using a tech stack that includes HTML, CSS, JavaScript for the frontend and Express, MySQL, and Node.js for the backend.
 <br><br> Visit: https://cointab-user-board.netlify.app/
 
+## Project Demo
 
 ## Tech Stack
 - Frontend: HTML, CSS, JavaScript
