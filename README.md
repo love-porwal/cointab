@@ -58,6 +58,6 @@ The project includes the following features:
 - Pagination: To navigate through the user data in a paginated manner.
 - Multiple Filters: To filter user data based on various criteria.
 
-![Screenshot (364)](https://github.com/love-porwal/cointab/assets/112820391/4a2a090a-5a2e-4878-b9e2-34835c341c2f)
+![Home Page](https://github.com/love-porwal/cointab/assets/112820391/4a2a090a-5a2e-4878-b9e2-34835c341c2f)
 
-![Screenshot (365)](https://github.com/love-porwal/cointab/assets/112820391/6847c103-5aa0-4a55-883a-b99610360172)
+![User Details](https://github.com/love-porwal/cointab/assets/112820391/6847c103-5aa0-4a55-883a-b99610360172)
