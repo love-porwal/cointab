@@ -54,7 +54,6 @@ The project exposes the following API endpoints:
 
 ## Features
 The project includes the following features:
-- Debouncing: For handling user input with reduced API calls.
 - Pagination: To navigate through the user data in a paginated manner.
 - Multiple Filters: To filter user data based on various criteria.
 
