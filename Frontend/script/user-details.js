@@ -1,5 +1,5 @@
 //   -------------------------------------------------------
-let url = "http://localhost:8080";
+let url = "https://nervous-erin-foal.cyclic.app";
 
 const currentPage = document.getElementById("currentPage");
 const genderFilter = document.getElementById("genderFilter");
