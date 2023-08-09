@@ -1,5 +1,5 @@
 // Function to fetch users and store in the database
-let url = "https://nervous-erin-foal.cyclic.app";
+let url = "http://localhost:8080";
 // Get references to the DOM elements
 const fetchUsersBtn = document.getElementById("fetch-users");
 const deleteUsersBtn = document.getElementById("delete-users");

@@ -50,7 +50,7 @@ async function storeUsers(users) {
           },
           email,
           login: { uuid, username, password, salt, md5, sha1, sha256 },
-          dob: { date: dob_date, age: dob_age },
+          dob: { date: dob_age, age: dob_date },
           registered: { date: registered_date, age: registered_age },
           phone,
           cell,
@@ -169,7 +169,7 @@ coinUserRoute.delete("/table-delete", async (req, res) => {
 });
 
 
-// >>>>>>>>>>>>>>>>>>>>>>      Route for handling pagination users data    <<<<<<<<<<<<<<<<<<<<<<<
+// >>>>>>>>>>>>>>>>>>>>>>      Route for handling pagination users data    <<<<<<<<<<<<<<<<<<<<<<<  
 
 coinUserRoute.get("/users-pagination", async (req, res) => {
   try {
